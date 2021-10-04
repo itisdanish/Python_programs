@@ -1,7 +1,10 @@
-userInput = input('Let Reverse your Word : ')
-def reverse(txt):
-    temp=''
-    for words in txt:
-        temp=words+temp
-    return temp
-print(reverse(userInput))
+list = ['Name','Type']
+data = ['Danish','Trainee']
+
+emp={}
+for key in list:
+    for value in data:
+        emp[key] = value
+        data.remove(value)
+        break
+print(emp)
